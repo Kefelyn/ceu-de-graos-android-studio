@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/verde_claro"
+    android:padding="16dp"
+    tools:context=".redefinir_senha">
+
+        <!--  logotipo  -->
+        <ImageView
+            android:id="@+id/logotipo"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@drawable/logo"
+            android:importantForAccessibility="no" />
+
+        <!--  o quadradinho branco  -->
+         <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/logotipo"
+            android:orientation="vertical"
+             android:background="@color/white"
+             android:padding="24dp"
+             android:elevation="4dp" >
+
+        <!-- pra colocar a senha nova -->
+        <EditText
+            android:id="@+id/campoNovaSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/nova_senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="#34B982"
+            android:layout_marginTop="10dp" />
+
+        <!-- para confirmar a senha nova -->
+        <EditText
+            android:id="@+id/campoConfirmarSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirmar_senha"
+            android:inputType="textPassword"
+            android:padding="12dp"
+            android:textColorHint="#34B982"
+            android:layout_marginTop="10dp" />
+
+        <!-- botão para redefinir a senha -->
+        <Button
+            android:id="@+id/btnRedefinirSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Redefinir senha"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/azul_escuro"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

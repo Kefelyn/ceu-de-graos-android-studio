@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/verde_claro"
+    android:padding="16dp">
+
+    <!-- logotipo -->
+    <ImageView
+        android:id="@+id/logotipo"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logo"
+        android:importantForAccessibility="no" />
+
+    <!-- quadradinho branco -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logotipo"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="24dp"
+        android:elevation="4dp" >
+
+        <!-- esqueceu a sua senha? -->
+        <TextView
+            android:id="@+id/recuperarSenha"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="@string/recuperar_senha"
+            android:textColorHint="@color/azul_escuro"
+            android:textSize="24sp" />
+
+        <!-- mensagem explicando o que fazer -->
+
+        <TextView
+            android:id="@+id/recuperarSenha2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:text="@string/recuperar_senha2"
+            android:textColorHint="@color/azul_escuro"
+            android:textSize="18sp" />
+
+        <!-- para colocar o email -->
+        <EditText
+            android:id="@+id/campoEmailRecuperacao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/campo_email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textColorHint="#34B982"
+            android:layout_marginTop="10dp"/>
+
+        <!-- botão para enviar o link -->
+        <Button
+            android:id="@+id/btnEnviarLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_enviar_link"
+            android:textColor="@android:color/white"
+            android:backgroundTint="@color/azul_escuro"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"/>
+
+        <!-- botao para caso o usuário não queira recuperar -->
+        <TextView
+            android:id="@+id/acessarConta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Acessar conta"
+            android:textColor="@color/azul_escuro"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:textSize="16sp" />
+
+        <!-- mensagem de link enviado com sucesso -->
+        <TextView
+            android:id="@+id/linkEnviado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            android:text="@string/link_enviado"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:gravity="center"
+            app:layout_constraintTop_toBottomOf="@id/btnEnviarLink"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

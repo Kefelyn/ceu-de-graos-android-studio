@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/verde_claro"
+    android:padding="16dp"
+    tools:context=".termos_avisos">
+
+    <!-- a logotipo -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="250dp"
+        android:layout_height="110dp"
+        android:gravity="center_horizontal"
+        android:importantForAccessibility="no"
+        android:src="@drawable/logoverde_horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!--  faz a tela rolar  -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- o quadradinho branco -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:elevation="4dp"
+            android:orientation="vertical"
+            android:padding="24dp"
+            app:layout_constraintTop_toBottomOf="@id/logo">
+
+            <!--  o texto do termos de uso divido em 9 partes -->
+            <TextView
+                android:id="@+id/termosDeUso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termos_de_uso"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="20sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/termosDeUso1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termos_de_uso1"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/termosDeUso2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termos_de_uso2"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/termosDeUso3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termos_de_uso3"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/termosDeUso4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termos_de_uso4"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/termosDeUso5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termos_de_uso5"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/termosDeUso6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termos_de_uso6"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/termosDeUso7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termos_de_uso7"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/termosDeUso8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/termos_de_uso8"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <!-- o texto do aviso de privacidade dividido em 11 partes  -->
+            <TextView
+                android:id="@+id/avisoDePrivacidade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="20sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/avisoDePrivacidade1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade1"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/avisoDePrivacidade2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade2"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/avisoDePrivacidade3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade3"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/avisoDePrivacidade4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade4"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/avisoDePrivacidade5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade5"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/avisoDePrivacidade6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade6"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/avisoDePrivacidade7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade7"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/avisoDePrivacidade8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade8"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <TextView
+                android:id="@+id/avisoDePrivacidade9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade9"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+            <TextView
+                android:id="@+id/avisoDePrivacidade10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/aviso_de_privacidade10"
+                android:textColorHint="@color/azul_escuro"
+                android:textSize="16sp"
+                android:padding="4dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </LinearLayout>
+
