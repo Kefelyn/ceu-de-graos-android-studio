@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="@color/verde_claro"
+    tools:context=".Perfil">
+
+    <!-- Barra superior com seta de voltar e logotipo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <!-- Seta de voltar -->
+        <ImageView
+            android:id="@+id/setaVoltar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Voltar"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Logotipo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="240dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logoverde_horizontal"
+            android:contentDescription="Logo" />
+    </LinearLayout>
+
+    <!-- o quadradinho branco -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:orientation="vertical"
+        android:padding="24dp"
+        app:layout_constraintTop_toBottomOf="@id/logo">
+
+                <!-- Nome do Usuário (Texto fixo para exibição) -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome:"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black" />
+
+        <EditText
+            android:id="@+id/editNome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azul_escuro"
+            android:enabled="false"
+            android:hint="@string/campo_nome"
+            android:minHeight="48dp"
+            android:textSize="16sp" />
+
+                <!-- Email do Usuário -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azul_escuro"
+            android:enabled="false"
+            android:hint="@string/campo_email"
+            android:inputType="textEmailAddress"
+            android:minHeight="48dp"
+            android:textSize="16sp" />
+
+                <!-- CPF/CNPJ -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="CPF/CNPJ:"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editCpfCnpj"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azul_escuro"
+            android:enabled="false"
+            android:hint="@string/campo_cpfcnpj"
+            android:inputType="number"
+            android:minHeight="48dp"
+            android:textSize="16sp" />
+
+                <!-- Endereço -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Endereço:"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editEndereco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azul_escuro"
+            android:enabled="false"
+            android:hint="@string/campo_endereco"
+            android:minHeight="48dp"
+            android:textSize="16sp" />
+
+                <!-- Senha -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Senha:"
+                    android:textSize="18sp"
+                    android:textColor="@android:color/black"
+                    android:layout_marginTop="16dp" />
+
+        <EditText
+            android:id="@+id/editSenha"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/azul_escuro"
+            android:enabled="false"
+            android:hint="@string/campo_senha"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            android:textSize="16sp" />
+
+                <!-- Botão para editar e salvar -->
+                <Button
+                    android:id="@+id/btnEditarSalvar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Editar Dados"
+                    android:backgroundTint="@color/azul_escuro"
+                    android:textColor="@android:color/white"
+                    android:layout_marginTop="24dp" />
+    </LinearLayout>
+
+</LinearLayout>

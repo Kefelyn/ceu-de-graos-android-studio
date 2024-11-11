@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-public class redefinir_senha extends AppCompatActivity {
+public class RedefinirSenha extends AppCompatActivity {
 
     private EditText campoNovaSenha, campoConfirmarSenha;
     private Button btnRedefinirSenha;
@@ -28,15 +28,15 @@ public class redefinir_senha extends AppCompatActivity {
             String confirmarSenha = campoConfirmarSenha.getText().toString().trim();
 
             if (novaSenha.isEmpty() || confirmarSenha.isEmpty()) {
-                Toast.makeText(redefinir_senha.this, "Por favor, preencha ambos os campos.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RedefinirSenha.this, "Por favor, preencha ambos os campos.", Toast.LENGTH_SHORT).show();
             } else if (!novaSenha.equals(confirmarSenha)) {
-                Toast.makeText(redefinir_senha.this, "As senhas não coincidem.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RedefinirSenha.this, "As senhas não coincidem.", Toast.LENGTH_SHORT).show();
             } else {
                 // Exibe a mensagem de sucesso
-                Toast.makeText(redefinir_senha.this, "A senha foi redefinida com sucesso!", Toast.LENGTH_SHORT).show();
+                Toast.makeText(RedefinirSenha.this, "A senha foi redefinida com sucesso!", Toast.LENGTH_SHORT).show();
 
                 // Redirecionar para a tela inicial de produtos
-                Intent intent = new Intent(redefinir_senha.this, tela_inicial.class);
+                Intent intent = new Intent(RedefinirSenha.this, TelaInicial.class);
                 startActivity(intent);
                 finish(); // Finaliza a Activity atual
             }

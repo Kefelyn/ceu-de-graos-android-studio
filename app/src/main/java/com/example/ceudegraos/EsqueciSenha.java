@@ -10,7 +10,7 @@ import android.widget.Toast;
 import android.os.Handler;
 import android.view.View;
 
-public class esqueci_senha extends AppCompatActivity {
+public class EsqueciSenha extends AppCompatActivity {
 
     private EditText campoEmailRecuperacao;
     private Button btnEnviarLink;
@@ -32,7 +32,7 @@ public class esqueci_senha extends AppCompatActivity {
             String email = campoEmailRecuperacao.getText().toString().trim();
 
             if (email.isEmpty()) {
-                Toast.makeText(esqueci_senha.this, "Por favor, insira o seu e-mail", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EsqueciSenha.this, "Por favor, insira o seu e-mail", Toast.LENGTH_SHORT).show();
             } else {
                 // Exibe a mensagem de "link enviado"
                 linkEnviado.setVisibility(View.VISIBLE);
@@ -40,7 +40,7 @@ public class esqueci_senha extends AppCompatActivity {
                 // Aguardar 2 segundos antes de redirecionar para a tela de redefinição de senha
                 new Handler().postDelayed(() -> {
                     // Redirecionar para a tela de redefinição de senha
-                    Intent intent = new Intent(esqueci_senha.this, redefinir_senha.class);
+                    Intent intent = new Intent(EsqueciSenha.this, RedefinirSenha.class);
                     startActivity(intent);
                     finish(); // Finaliza a Activity atual para evitar que o usuário retorne para esta
                 }, 2000); // 2000 milissegundos = 2 segundos
@@ -50,7 +50,7 @@ public class esqueci_senha extends AppCompatActivity {
         // Ação do texto "Acessar conta"
         acessarConta.setOnClickListener(v -> {
             // Redirecionar para a tela de login
-            Intent intent = new Intent(esqueci_senha.this, form_login.class);
+            Intent intent = new Intent(EsqueciSenha.this, FormLogin.class);
             startActivity(intent);
             finish(); // Finaliza a Activity atual
         });

@@ -9,7 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 
-public class form_cadastro extends AppCompatActivity {
+public class FormCadastro extends AppCompatActivity {
 
     private EditText campoNome, campoEmail, campoCpfCnpj, campoEndereco, campoSenha;
     private Button btnCadastrar;
@@ -39,25 +39,24 @@ public class form_cadastro extends AppCompatActivity {
             String senha = campoSenha.getText().toString().trim();
 
             if (nome.isEmpty() || email.isEmpty() || cpfCnpj.isEmpty() || endereco.isEmpty() || senha.isEmpty()) {
-                Toast.makeText(form_cadastro.this, "Por favor, preencha todos os campos.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(FormCadastro.this, "Por favor, preencha todos os campos.", Toast.LENGTH_SHORT).show();
             } else {
                 // Lógica de cadastro (exemplo)
                 realizarCadastro(nome, email, cpfCnpj, endereco, senha);
             }
         });
 
-        // Redirecionar para a tela de login
+        // Redirecionar para a tela inicial
         acessarConta.setOnClickListener(v -> {
-            Intent intent = new Intent(form_cadastro.this, form_login.class);
+            Intent intent = new Intent(FormCadastro.this, FormLogin.class);
             startActivity(intent);
             finish();
         });
 
-        // Termos de uso e Aviso de Privacidade
+        // Redireciona para a tela de termos e avisos
         lgpdTermosAvisos.setOnClickListener(v -> {
-            // Redirecionar para uma Activity que exibe os Termos de Uso e o Aviso de Privacidade
-            Intent intent = new Intent(form_cadastro.this, termos_avisos.class);
-            startActivity(intent);
+                Intent intent = new Intent(FormCadastro.this, TermosAvisos.class);
+                startActivity(intent); // Não precisa fechar a tela de login aqui
         });
     }
 
@@ -65,7 +64,7 @@ public class form_cadastro extends AppCompatActivity {
         // Aqui você pode adicionar a lógica para salvar o usuário no banco de dados ou autenticação com Firebase.
         Toast.makeText(this, "Cadastro realizado com sucesso!", Toast.LENGTH_SHORT).show();
         // Após o cadastro, você pode redirecionar o usuário para a tela de login ou a tela principal
-        Intent intent = new Intent(form_cadastro.this, form_login.class);
+        Intent intent = new Intent(FormCadastro.this, TelaInicial.class);
         startActivity(intent);
         finish();
     }

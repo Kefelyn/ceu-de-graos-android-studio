@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Pagamento"
+    android:background="@color/verde_claro">
+
+    <!-- Barra superior com seta de voltar e logotipo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="16dp">
+
+        <!-- Seta de voltar -->
+        <ImageView
+            android:id="@+id/setaVoltar"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_arrow_back"
+            android:contentDescription="Voltar"
+            android:layout_marginEnd="16dp" />
+
+        <!-- Logotipo -->
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="240dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logoverde_horizontal"
+            android:contentDescription="Logo" />
+    </LinearLayout>
+
+    <!-- Quadrado branco para centralizar o conteúdo -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:elevation="4dp"
+        android:padding="24dp"
+        android:gravity="center">
+
+        <!-- Texto para exibir "Pix Copia e Cola" -->
+        <TextView
+            android:id="@+id/textoPix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pix Copia e Cola:"
+            android:textSize="20sp"
+            android:textColor="@android:color/black"
+            android:layout_marginBottom="8dp" />
+
+        <!-- Código alfanumérico do Pix Copia e Cola -->
+        <TextView
+            android:id="@+id/codigoPix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="A1B2C3D4E5F6G7H8I9J0K1L2M3N4O5P6"
+            android:textSize="18sp"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- Botão para copiar o código Pix -->
+        <Button
+            android:id="@+id/botaoCopiarPix"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copiar Pix"
+            android:backgroundTint="@color/azul_escuro"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+</LinearLayout>
