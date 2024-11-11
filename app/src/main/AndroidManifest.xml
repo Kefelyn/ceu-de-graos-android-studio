@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CeuDeGraos"
+        tools:targetApi="31">
+
+        <!-- tela de loading -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".FormLogin"
+            android:exported="true" /> <!-- tela de login -->
+        <activity
+            android:name=".TelaInicial"
+            android:exported="true" /> <!-- tela inicial -->
+        <activity
+            android:name=".RedefinirSenha"
+            android:exported="true" /> <!-- tela de redefinição de senha -->
+        <activity
+            android:name=".TermosAvisos"
+            android:exported="true" /> <!-- tela de termos e avisos -->
+        <activity
+            android:name=".EsqueciSenha"
+            android:exported="true" /> <!-- tela esqueci a senha -->
+        <activity
+            android:name=".FormCadastro"
+            android:exported="false" /> <!-- tela de cadastro -->
+        <activity
+            android:name=".Pagamento"
+            android:exported="true" /> <!-- tela de pagamento -->
+        <activity
+            android:name=".DetalhesPedidos"
+            android:exported="true" /> <!-- tela de detalhes dos pedidos -->
+        <activity
+            android:name=".AvaliacaoPedido"
+            android:exported="true" /> <!-- avaliar os pedidos -->
+        <activity
+            android:name=".Configuracoes"
+            android:exported="true" /> <!-- configurações do aplicativo  -->
+        <activity
+            android:name=".Perfil"
+            android:exported="true" /> <!-- perfil do usuário -->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/verde_claro"
+    android:padding="16dp"
+    tools:context=".FormLogin">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="220dp"
+        android:layout_height="220dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/logo" />
+
+    <!--  o quadradinho branco que tem as informações  -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/logo"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="24dp"
+        android:elevation="4dp" >
+
+        <!-- a mensagem: Conecte-se com o email e senha para entrar. -->
+        <TextView
+            android:id="@+id/LoginMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="16dp"
+            android:hint="@string/conecte_se"
+            android:textColorHint="#0E4F55"
+            android:textSize="24sp" />
+
+        <!-- para colocar o email -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/Email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/campo_email"
+                android:padding="12dp"
+                android:textColorHint="#34B982" />
+
+        </LinearLayout>
+
+        <!-- para colocar a senha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <EditText
+                android:id="@+id/Senha"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/campo_senha"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textColorHint="#34B982"/>
+
+        </LinearLayout>
+
+        <!-- lembrar a senha -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="10dp">
+
+            <!-- checkbox lembrar senha -->
+            <CheckBox
+                android:id="@+id/LembrarSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lembrar_senha"
+                android:textColor="@android:color/black"
+                android:layout_marginEnd="24dp"/>
+
+            <!-- esqueci senha -->
+            <TextView
+                android:id="@+id/EsqueciSenha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/esqueci_senha"
+                android:textSize="12sp"
+                android:textColor="@color/azul_escuro"/>
+        </LinearLayout>
+
+        <!-- botão para logar -->
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_login"
+            android:textColor="#FFFFFF"
+            android:backgroundTint="@color/azul_escuro"
+            android:layout_marginTop="20dp"
+            android:padding="16dp"
+            tools:ignore="VisualLintButtonSize" />
+
+        <!-- botão para cadastrar -->
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/verde_claro"
+            android:padding="16dp"
+            android:text="@string/btn_cadastrar"
+            android:textColor="#FFFFFF"
+            tools:ignore="VisualLintButtonSize,TextContrastCheck" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
