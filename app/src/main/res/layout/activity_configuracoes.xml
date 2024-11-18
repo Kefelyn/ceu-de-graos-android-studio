@@ -11,7 +11,7 @@
     android:background="@color/verde_claro"
     tools:context=".Configuracoes">
 
-        <!-- Logotipo -->
+        <!-- a logotipo -->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="240dp"
@@ -50,7 +50,7 @@
             android:textColor="@android:color/white"
             android:layout_marginBottom="4dp"/>
 
-        <!-- Termos de Uso -->
+        <!-- botão termos de uso -->
         <Button
             android:id="@+id/btnTermosUso"
             android:layout_width="match_parent"
@@ -60,7 +60,7 @@
             android:textColor="@android:color/white"
             android:layout_marginBottom="4dp"/>
 
-        <!-- Política de Privacidade -->
+        <!-- botão política de privacidade -->
         <Button
             android:id="@+id/btnPoliticaPrivacidade"
             android:layout_width="match_parent"
@@ -70,7 +70,7 @@
             android:textColor="@android:color/white"
             android:layout_marginBottom="4dp" />
 
-        <!-- Entrar em Contato -->
+        <!-- botão entrar em contato -->
         <Button
             android:id="@+id/btnEntrarContato"
             android:layout_width="match_parent"
@@ -80,7 +80,7 @@
             android:textColor="@android:color/white"
             android:layout_marginBottom="4dp"/>
 
-        <!-- Deslogar -->
+        <!-- botão pra deslogar -->
         <Button
             android:id="@+id/btnSair"
             android:layout_width="match_parent"

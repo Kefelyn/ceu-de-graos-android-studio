@@ -11,7 +11,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     android:background="@color/verde_claro"
     android:padding="16dp"
     tools:context=".TermosAvisos">
-    <!-- Barra superior com seta de voltar e logotipo -->
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -19,7 +19,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
         android:gravity="center_vertical"
         android:padding="16dp">
 
-        <!-- Seta de voltar -->
+        <!-- setinha para voltar -->
         <ImageView
             android:id="@+id/setaVoltar"
             android:layout_width="24dp"
@@ -28,7 +28,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             android:contentDescription="Voltar"
             android:layout_marginEnd="16dp" />
 
-        <!-- Logotipo -->
+        <!-- a logotipo -->
         <ImageView
             android:id="@+id/logo"
             android:layout_width="240dp"

@@ -11,7 +11,7 @@
     android:padding="16dp"
     tools:context=".RedefinirSenha">
 
-        <!--  logotipo  -->
+        <!-- a logotipo  -->
         <ImageView
             android:id="@+id/logotipo"
             android:layout_width="240dp"

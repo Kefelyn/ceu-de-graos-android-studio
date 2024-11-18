@@ -15,7 +15,7 @@
     <string name="cadastre_se">Crie a sua conta</string>
     <string name="campo_nome">Nome completo/Empresa</string>
     <string name="campo_cpfcnpj">CPF/CNPJ</string>
-    <string name="campo_endereco">Endereço</string>
+    <string name="campo_endereco">sua rua, numero</string>
     <string name="lgpd">Termos de Uso e Política de Privacidade</string>
 
     <!-- tela esqueci senha -->

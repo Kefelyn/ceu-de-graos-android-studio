@@ -9,6 +9,7 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <!-- a logotipo -->
     <ImageView
         android:id="@+id/logo"
         android:layout_width="300dp"

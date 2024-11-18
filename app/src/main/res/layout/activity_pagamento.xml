@@ -27,7 +27,7 @@
             android:contentDescription="Voltar"
             android:layout_marginEnd="16dp" />
 
-        <!-- Logotipo -->
+        <!-- a logotipo -->
         <ImageView
             android:id="@+id/logo"
             android:layout_width="240dp"
@@ -36,7 +36,7 @@
             android:contentDescription="Logo" />
     </LinearLayout>
 
-    <!-- Quadrado branco para centralizar o conteúdo -->
+    <!-- o quadradinho branco -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
@@ -47,7 +47,7 @@
         android:padding="24dp"
         android:gravity="center">
 
-        <!-- Texto para exibir "Pix Copia e Cola" -->
+        <!--texto copia e cola-->
         <TextView
             android:id="@+id/textoPix"
             android:layout_width="wrap_content"
@@ -57,7 +57,7 @@
             android:textColor="@android:color/black"
             android:layout_marginBottom="8dp" />
 
-        <!-- Código alfanumérico do Pix Copia e Cola -->
+        <!-- o código do pix -->
         <TextView
             android:id="@+id/codigoPix"
             android:layout_width="wrap_content"
@@ -68,7 +68,7 @@
             android:textStyle="bold"
             android:layout_marginBottom="16dp" />
 
-        <!-- Botão para copiar o código Pix -->
+        <!-- botão de copiar o pix -->
         <Button
             android:id="@+id/botaoCopiarPix"
             android:layout_width="wrap_content"
